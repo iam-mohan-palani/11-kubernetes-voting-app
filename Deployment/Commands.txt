@@ -1,0 +1,35 @@
+v
+   99  kubectl delete --all services
+  100  kubectl get pods,svc
+  101  ls
+  102  cd Deployment
+  103  ls
+  104  kubectl create -f voting-app-service.yaml
+  105  kubectl get deployments
+  106  kubectl create -f redis-deploy.yaml
+  107  kubectl create -f redis-service.yaml
+  108  kubectl create -f postgres-service.yaml
+  109  kubectl create -f postgres-deploy.yaml
+  110  kubectl edit postgres-deploy.yaml
+  111  kubectl create -f postgres-deploy.yaml
+  112  kubectl get deployments
+  113  kubectl get pods
+  114  kubectl get pods,svc
+  115  kubectl create -f worker-app-deploy.yaml
+  116  kubectl create -f result-app-deploy.yaml
+  117  kubectl get deployments
+  118  minikube service voting-service --url
+  119  minikube service result-service --url
+  120  kubectl get services
+  121  ls
+  122  kubectl get deployments,svc
+  123  kubectl create -f result-service.yaml
+  124  kubectl create -f result-app-service.yaml
+  125  kubectl get deployments,svc
+  126  minikube service result-service --url
+  127  kubectl get pods,deployments,svc
+  128  kubectl scale deployments voting-app-deply --replicas=3
+  129  kubectl scale deployment voting-app-deply --replicas=3
+  130  kubectl scale deployment voting-app-deploy --replicas=3
+  131  kubectl get deployments
+  132  history

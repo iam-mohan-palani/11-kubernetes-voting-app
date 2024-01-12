@@ -1,0 +1,83 @@
+vboxuser@Ubuntu:~/VS/voting/app$ 
+    1  pwd
+    2  ls
+    3  mkdir voting app
+    4  ls
+    5  cd voting
+    6  curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+    7  sudo apt-get update
+    8  apt install curl
+    9  sudo curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+   10  sudo apt install curl
+   11  snap install curl
+   12  echo "$(cat kubectl.sha256)  kubectl" | sha256sum --check
+   13  sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+   14  chmod +x kubectl
+   15  mkdir -p ~/.local/bin
+   16  mv ./kubectl ~/.local/bin/kubectl
+   17  kubectl
+   18  snap install kubectl --classic
+   19  kubectl version --client
+   20  kubectl
+   21  dpkg -l
+   22  rpm -qa
+   23  curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
+   24  sudo dpkg -i minikube_latest_amd64.deb
+   25  dpkg -i minikube_latest_amd64.deb
+   26  curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
+   27  su root
+   28  ls
+   29  cd voting
+   30  kubectl
+   31  curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
+   32  sudo dpkg -i minikube_latest_amd64.deb
+   33  minikube status
+   34  minikube start --driver=virtualbox
+   35  minikube status
+   36  kubectl get nodes
+   37  minikube config set driver virtualbox
+   38  minikube start --driver=virtualbox
+   39  minikube status
+   40  sudo minikube start --driver=virtualbox
+   41  minikube start --driver=virtualbox
+   42  kubectl
+   43  minikube
+   44  minikube start --driver=virtualbox
+   45  minikube status
+   46  kubectl get nodes
+   47  minikube dashboard
+   48  minikube start --no-vtx-check
+   49  minikube start --driver=virtualbox --no-vtx-check
+   50  minikube delete
+   51  minikube start --driver=virtualbox --no-vtx-check
+   52  docker
+   53  curl -fsSL https://get.docker.com -o get-docker.sh
+   54  sudo sh get-docker.sh
+   55  docker
+   56  minikube start --driver=docker
+   57  minikube delete
+   58  minikube start --driver=docker
+   59  sudo minikube start --driver=docker
+   60  sudo usermod -aG docker vboxuser && newgrp docker
+   61  minikube delete
+   62  minikube start --driver=docker
+   63  minikube status
+   64  kubectl get pod
+   65  minikube start --driver=docker
+   66  minikube status
+   67  history
+   68  minikube service voting-service --url
+   69  kubectl create -f redis-pod.yaml
+   70  kubectl create -f redis-service.yaml
+   71  kubectl get pods,svc
+   72  kubectl create -f postgres-pod.yaml
+   73  kubectl create -f postgres-service.yaml
+   74  kubectl get pods,svc
+   75  kubectl create -f worker-app-pod.yaml
+   76  minikube status
+   77  kubectl create -f result-app-pod.yaml
+   78  kubectl create -f result-app-service.yaml
+   79  kubectl get pods,svc
+   80  minikube service voting-service --url
+   81  minikube service result-service --url
+   82  history
